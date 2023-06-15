@@ -24,7 +24,7 @@ class MainActivity : ComponentActivity() {
         super.onResume()
         Log.i("logname","onresume")
     }
-
+//comment
     override fun onPause() {
         super.onPause()
         Log.i("logname","Onpause")
