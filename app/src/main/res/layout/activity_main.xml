@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:gravity="top"
+            android:text="@string/bmi_calculator"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@android:color/holo_purple"
+            android:contentDescription="@string/todo" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_your_weight"
+            android:ems="10"
+            android:inputType="number"
+            android:padding="20dp"
+            android:id="@+id/weight"
+            android:autofillHints="" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="@string/enter_your_height"
+            android:padding="20dp"
+            android:id="@+id/height"
+            android:autofillHints="" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="@string/enter_your_age"
+            android:padding="20dp"
+            android:id="@+id/age"
+            android:autofillHints="" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/btn"
+            android:layout_marginTop="11dp"
+            android:text="@string/calculate_bmi"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/result"
+            android:text="@string/result"
+            android:textSize="21sp"
+            android:textStyle="bold"
+           android:textColor="#00f000"
+            android:layout_marginTop="23dp"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
